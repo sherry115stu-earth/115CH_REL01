@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f6ef">
+<meta name="description" content="國語第一課複習站：相似字配對、部首、句子排序、看圖作答、生字與圈詞、聽音辨詞、造詞、造句及字音，共14項練習。">
+<title>第一課複習站｜國語星球</title>
+<style>
+:root{color-scheme:light;--ink:#23364a;--muted:#526271;--paper:#f8f6ef;--purple:#6755a0;--line:#e4e4df;--shadow:0 8px 28px #24394e07;font-size:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #7453b9;outline-offset:5px}button{color:var(--ink)}[hidden]{display:none!important}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}.skip{position:fixed;top:-100px;left:20px;background:white;z-index:99;padding:10px 20px;border:2px solid}.skip:focus{top:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:94px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:1.06rem;font-weight:800;letter-spacing:.06em}.brand svg{width:42px;height:42px}.brand small{font-size:.68rem;color:var(--muted);font-weight:600;display:block;letter-spacing:.14em}.top-actions{display:flex;align-items:center;gap:18px}.chapter-pill{font-size:.72rem;color:var(--muted);letter-spacing:.08em}.size-button{padding:9px 15px;background:transparent;border:1px solid #c9cdd0;border-radius:12px;font-size:.8rem;min-height:44px}.size-button[aria-pressed=true]{background:#e5def2;border-color:#b4a5cf}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:center;padding:46px 0 32px;min-height:366px}.eyebrow{display:flex;align-items:center;gap:9px;font-size:.75rem;letter-spacing:.16em;font-weight:700;color:#70618a}.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:#9c8cbd}h1{font-size:clamp(2.1rem,4.3vw,3.2rem);line-height:1.28;letter-spacing:.025em;margin:16px 0 18px;font-weight:900}h1 em{font-style:normal;color:var(--purple)}.hero-copy>p{color:var(--muted);max-width:480px;margin:0 0 24px;font-size:.95rem}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.primary,.secondary{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:12px 22px;min-height:50px;border-radius:14px;font-weight:700;font-size:.87rem}.primary{background:var(--ink);color:white;border:1px solid var(--ink)}.secondary{background:#fff9;border:1px solid #d2d5d5}.primary:hover{background:#3c5267}.secondary:hover{background:white;border-color:#a9afb4}.hero-art{position:relative;align-self:stretch;display:grid;place-items:center;min-height:286px}.hero-art>svg{width:100%;max-width:470px;height:auto}.art-caption{position:absolute;bottom:0;right:12%;background:#fff9;border:1px solid white;border-radius:30px;padding:7px 18px;font-size:.74rem;color:#626170;transform:rotate(-3deg)}
+.progress-panel{background:#fff;border:1px solid #e3e6df;border-radius:23px;display:grid;grid-template-columns:1fr 1.1fr;gap:30px;padding:24px 28px;box-shadow:var(--shadow);align-items:center;margin:10px 0 38px}.progress-heading{display:flex;align-items:center;gap:12px}.star-icon{display:grid;place-items:center;background:#fff4d7;color:#806127;width:48px;height:48px;flex:none;border-radius:15px;font-size:1.45rem}.progress-title{font-size:.95rem;font-weight:800;margin:0}.progress-caption{font-size:.73rem;color:var(--muted);margin:2px 0 0}.progress-meta{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;gap:16px;margin-bottom:10px}.progress-meta strong{font-size:1.05rem;color:var(--purple)}.reset{font-size:.7rem;text-decoration:underline;text-underline-offset:4px;background:none;border:none;padding:8px 0;min-height:44px;color:var(--muted)}.reset:disabled{opacity:.5;cursor:default}.track{height:10px;border-radius:30px;overflow:hidden;background:#f0edf5}.fill{display:block;height:100%;background:#a08ac5;width:0;transition:width .3s ease;border-radius:30px}.mini-stars{display:flex;justify-content:space-between;gap:5px;margin-top:8px;color:#dddadf;font-size:.82rem}.mini-stars .earned{color:#a07317}.storage-note{font-size:.7rem;color:#7a5425;margin:10px 0 0}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin:0 0 20px}h2{font-size:1.45rem;margin:0;letter-spacing:.03em}.section-head p{font-size:.78rem;margin:7px 0 0;color:var(--muted)}.count-badge{flex:none;padding-bottom:3px;font-size:.75rem;color:var(--muted)}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:25px}.filter{padding:9px 19px;min-height:46px;border:1px solid #dedfdd;border-radius:99px;background:#fff9;font-size:.82rem;white-space:nowrap}.filter[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}.filter:hover:not([aria-pressed=true]){background:#ede8f3}.filter span{margin-left:6px;font-size:.65rem;opacity:.75}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}.card{--accent:#746094;--tint:#eee8f5;background:#fff;border:1px solid #e2e3df;border-radius:22px;padding:23px 23px 19px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s;scroll-margin:26px}.card:hover{transform:translateY(-2px);box-shadow:0 10px 28px #2537490d}.card[data-category=word]{--accent:#3d7465;--tint:#e2eee5}.card[data-category=sentence]{--accent:#9b622e;--tint:#f9eadb}.card[data-category=sound]{--accent:#3c7488;--tint:#e2eff3}.card-top{display:flex;align-items:center;gap:10px;margin-bottom:17px}.subject-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:14px;background:var(--tint);color:var(--accent);font-weight:800;font-size:1.2rem;flex:none}.category-label{font-size:.67rem;color:var(--accent);font-weight:700;letter-spacing:.045em}.card-number{margin-left:auto;color:#a2a7ad;font-size:.67rem;font-family:ui-monospace,monospace}h3{font-size:1.24rem;line-height:1.35;margin:0 0 8px;font-weight:800;letter-spacing:.015em}.card-desc{font-size:.78rem;color:var(--muted);line-height:1.7;margin:0 0 20px;min-height:2.65em}.activities{display:grid;gap:11px}.activity{border-radius:12px;background:#fafaf8;border:1px solid #e9e9e3;overflow:hidden}.activity-link{display:flex;gap:10px;justify-content:space-between;align-items:center;padding:12px 13px;font-size:.82rem;font-weight:700;min-height:52px}.activity-link:hover{background:var(--tint)}.activity-link:focus-visible{outline-offset:-4px}.level{color:var(--accent);font-size:.76rem;background:white;padding:2px 8px;border-radius:6px;border:1px solid #e8e8e3}.done-label{display:flex;align-items:center;gap:8px;border-top:1px solid #e9e9e3;padding:8px 13px;min-height:44px;font-size:.68rem;color:var(--muted);cursor:pointer;user-select:none}.done-label:hover{background:#f0eee7}.done-label input{appearance:none;-webkit-appearance:none;width:19px;height:19px;flex:none;border:1.5px solid #8a9499;border-radius:5px;background:white;cursor:pointer;margin:0;display:grid;place-content:center}.done-label input:checked{background:#557a63;border-color:#557a63}.done-label input:checked:after{content:"";width:8px;height:4px;border-left:2px solid white;border-bottom:2px solid white;transform:translateY(-1px) rotate(-45deg)}.done-star{margin-left:auto;opacity:0;color:#916c1f}.activity.is-done{background:#f0f5ed;border-color:#c9d9c5}.activity.is-done .done-label{color:#345641;border-top-color:#dce6d8}.activity.is-done .done-star{opacity:1}.card.picked{outline:3px solid #ac8a45;outline-offset:5px}
+.tips{border:1px dashed #d4d5cc;border-radius:19px;padding:18px 23px;margin:34px 0 28px;background:#fff5}.tips summary{cursor:pointer;font-size:.83rem;font-weight:700;min-height:30px}.tips p{color:var(--muted);font-size:.78rem;line-height:1.9;margin:12px 0 0}.tips strong{color:var(--ink)}footer{display:flex;justify-content:space-between;gap:20px;font-size:.71rem;color:var(--muted);padding:22px 0 32px;border-top:1px solid var(--line)}.toast{position:fixed;z-index:10;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:14px 24px;border-radius:15px;font-size:.86rem;box-shadow:0 8px 30px #0002;width:max-content;max-width:calc(100vw - 36px);pointer-events:none;text-align:center}.large-type{font-size:22px}.large-type .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.large-type .hero{grid-template-columns:1.3fr 1fr}.large-type .hero-art{min-width:0}noscript .noscript-note{padding:16px;background:#fff3d4;border-radius:12px;font-size:.8rem}.js-only{display:none}html.js .js-only{display:revert}html.js .hero-buttons.js-only{display:flex}html.js .filters.js-only{display:flex}html.js .progress-panel.js-only{display:grid}html:not(.js) .done-label{display:none}
+@media(min-width:1600px){.wrap{width:min(1450px,calc(100% - 100px))}:root{font-size:21px}.hero{padding-top:54px}.hero-art>svg{max-width:510px}}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1.3fr 1fr}.hero-art{min-height:240px}.art-caption{right:0;font-size:.65rem}.progress-panel{gap:20px;padding:22px}.large-type .hero-art{display:none}.large-type .hero{grid-template-columns:1fr}.large-type .progress-panel{grid-template-columns:1fr}}
+@media(max-width:650px){.wrap{width:calc(100% - 32px)}.topbar{min-height:80px;gap:10px}.brand{font-size:.88rem;gap:8px}.brand svg{width:34px}.brand small{font-size:.56rem}.chapter-pill{display:none}.size-button{font-size:.72rem;padding:8px 10px}.hero{display:block;padding:30px 0 24px;min-height:0}.hero-art{display:none}h1{font-size:2.25rem;margin:14px 0}.hero-copy>p{font-size:.88rem;margin-bottom:20px}.eyebrow{font-size:.66rem}.hero-buttons{gap:9px}.primary,.secondary{padding:11px 17px;font-size:.82rem}.progress-panel{grid-template-columns:1fr;gap:14px;margin:6px 0 28px;padding:20px;border-radius:18px}.progress-caption{font-size:.68rem}.section-head{gap:10px;align-items:center}h2{font-size:1.3rem}.section-head p{font-size:.73rem}.count-badge{font-size:.64rem}.filters{gap:8px;margin-bottom:20px}.filter{padding:8px 13px;font-size:.74rem}.filter span{margin-left:4px}.grid,.large-type .grid{grid-template-columns:1fr;gap:16px}.card{padding:21px}.card-desc{min-height:0;margin-bottom:17px}.card-top{margin-bottom:13px}.activity-link{font-size:.91rem;padding:14px}.done-label{font-size:.78rem;padding:10px 14px;min-height:48px}.level{font-size:.82rem}.card-desc{font-size:.84rem}.category-label{font-size:.72rem}.tips{padding:17px}.tips p{font-size:.77rem}footer{display:block;font-size:.68rem}footer span{display:block;margin-bottom:4px}.large-type h1{font-size:2rem}.large-type .brand small{display:none}.large-type .size-button{font-size:.65rem}.large-type .hero-buttons{flex-direction:column;align-items:stretch}.large-type .count-badge{display:none}.large-type .mini-stars{gap:1px;font-size:.72rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+@media print{.top-actions,.hero-art,.hero-buttons,.progress-panel,.filters,.done-label,.tips,.toast{display:none!important}.hero{display:block;min-height:0;padding:20px 0}.wrap{width:100%}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.card{break-inside:avoid;box-shadow:none}.activity-link:after{content:attr(href);font-size:9px;word-break:break-all}.activity-link{flex-wrap:wrap}.card[hidden]{display:block!important}.card{padding:15px}h1{font-size:32px}.topbar{min-height:60px}body{background:white}.card-desc{min-height:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#practice">跳到複習練習</a>
+<div class="wrap">
+<header class="topbar">
+ <a class="brand" href="#" aria-label="國語星球，回到頁首"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15" fill="#c4b4d8"/><ellipse cx="24" cy="24" rx="25" ry="7" transform="rotate(-28 24 24)" fill="none" stroke="#657e70" stroke-width="3"/><circle cx="20" cy="18" r="3" fill="#e4d9ef"/><path d="M27 28q5 2 6-4" stroke="#76638c" stroke-width="2" fill="none" stroke-linecap="round"/></svg><span>國語星球<small>一起練習，一起進步</small></span></a>
+ <div class="top-actions"><span class="chapter-pill">第一課複習站</span><button class="size-button js-only" id="font-toggle" type="button" aria-pressed="false">Aa 放大字體</button></div>
+</header>
+<main>
+<section class="hero" aria-labelledby="page-title">
+ <div class="hero-copy"><div class="eyebrow">國語小探險 · LESSON 01</div><h1 id="page-title">第一課，<br><em>一起出發！</em></h1><p>看清字形，聽懂字音，<br>把詞語變成好句子。準備好來練習了嗎？</p><div class="hero-buttons js-only"><a class="primary" href="#practice">選擇練習 <span aria-hidden="true">↓</span></a><button type="button" class="secondary" id="pick-one"><span aria-hidden="true">✧</span> 幫我挑一個</button></div></div>
+ <div class="hero-art" aria-hidden="true">
+ <svg viewBox="0 0 480 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><radialGradient id="wash"><stop stop-color="#e7e3ec"/><stop offset="1" stop-color="#f8f6ef"/></radialGradient><linearGradient id="planet" x1="180" y1="180" x2="350" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#a8c8ba"/><stop offset="1" stop-color="#dae5ca"/></linearGradient></defs>
+  <ellipse cx="257" cy="161" rx="209" ry="153" fill="url(#wash)"/>
+  <ellipse cx="259" cy="193" rx="183" ry="93" transform="rotate(-17 259 193)" stroke="#d4c9dd" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <path d="M90 76v14m-7-7h14M392 74v12m-6-6h12M401 213v12m-6-6h12M141 278v12m-6-6h12" stroke="#b79b62" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="157" cy="42" r="3" fill="#b4a7cb"/><circle cx="358" cy="142" r="4" fill="#a6bfbc"/><circle cx="67" cy="199" r="3" fill="#b4a7cb"/><circle cx="377" cy="279" r="3" fill="#b4a7cb"/>
+  <g transform="rotate(-15 290 233)"><ellipse cx="283" cy="248" rx="110" ry="35" stroke="#e2b985" stroke-width="12"/><circle cx="285" cy="232" r="77" fill="url(#planet)"/><path d="M215 205q41-15 75 5t65 0M209 233q44-16 84 5t65-1M220 269q40-20 81-4t46-3" stroke="#8fae9d" stroke-width="10" opacity=".25" stroke-linecap="round"/><path d="M176 245c7 33 183 47 215 4" stroke="#e2b985" stroke-width="12" stroke-linecap="round"/></g>
+  <g transform="translate(196 49) rotate(-12 40 72)"><rect x="-7" y="61" width="91" height="75" rx="21" fill="#c8bdd8" stroke="#7d7290" stroke-width="2"/><path d="M5 104l-23 24q-12 9-19-1t1-18l32-34M77 97l26-23q10-9 18 1t-2 18l-31 27" fill="#fdfbf8" stroke="#7d7290" stroke-width="2.5"/><rect x="4" y="73" width="72" height="81" rx="25" fill="#fdfbf8" stroke="#7d7290" stroke-width="2.5"/><path d="M15 143l-5 28q-1 13 12 13t15-12l4-20M51 151l10 23q6 12 17 7t6-17l-14-27" fill="#fdfbf8" stroke="#7d7290" stroke-width="2.5"/><rect x="22" y="102" width="36" height="25" rx="7" fill="#e4dced"/><circle cx="31" cy="114" r="3" fill="#a695bb"/><path d="M40 111h10m-10 7h7" stroke="#a695bb" stroke-width="2.5" stroke-linecap="round"/><circle cx="39" cy="48" r="46" fill="#fdfbf8" stroke="#7d7290" stroke-width="2.5"/><rect x="5" y="23" width="68" height="51" rx="25" fill="#66788b"/><path d="M15 41q3-9 16-11" stroke="#c5d5db" stroke-width="5" stroke-linecap="round"/><circle cx="29" cy="52" r="3" fill="#fdfbf8"/><circle cx="51" cy="52" r="3" fill="#fdfbf8"/><path d="M34 62q6 5 12-1" stroke="#fdfbf8" stroke-width="2" stroke-linecap="round"/><path d="M-1 49h-6m92 0h-6" stroke="#c8bdd8" stroke-width="10" stroke-linecap="round"/></g>
+  <g transform="rotate(-13 112 151)"><rect x="75" y="114" width="63" height="65" rx="17" fill="#f1dfbe"/><text x="106.5" y="159" text-anchor="middle" font-size="34" font-family="sans-serif" font-weight="700" fill="#916e42">字</text></g>
+  <g transform="rotate(14 362 96)"><rect x="333" y="69" width="57" height="57" rx="16" fill="#d8cce8"/><text x="362" y="110" text-anchor="middle" font-size="30" font-family="sans-serif" font-weight="700" fill="#7d6599">詞</text></g>
+ </svg><span class="art-caption">每天一小步，學習大進步 ✦</span></div>
+</section>
+<section class="progress-panel js-only" aria-labelledby="progress-title">
+ <div class="progress-heading"><span class="star-icon" aria-hidden="true">✦</span><div><h2 class="progress-title" id="progress-title">我的複習星圖</h2><p class="progress-caption" id="progress-caption">完成一個練習，就點亮一顆星星！</p></div></div>
+ <div><div class="progress-meta"><span>已練習 <strong id="done-count">0</strong> / 14</span><button class="reset" id="reset" type="button" disabled>重新記錄</button></div><div class="track" id="progress" role="progressbar" aria-label="練習完成進度" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0"><span class="fill" id="progress-fill"></span></div><div class="mini-stars" id="stars" aria-hidden="true"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="storage-note" id="storage-note" hidden>目前無法儲存進度；關閉或重新整理後，紀錄可能消失。</p></div>
+</section>
+<section id="practice" aria-labelledby="practice-title">
+ <div class="section-head"><div><h2 id="practice-title">今天想練習什麼？</h2><p>選一個練習 → 另開分頁作答 → 回來勾選完成</p></div><span class="count-badge" id="card-count" role="status">11 個主題 · 14 項練習</span></div>
+ <nav class="filters js-only" aria-label="依練習類型篩選"><button class="filter" type="button" data-filter="all" aria-pressed="true">全部練習 <span>14</span></button><button class="filter" type="button" data-filter="shape" aria-pressed="false">字形與部首 <span>5</span></button><button class="filter" type="button" data-filter="word" aria-pressed="false">字義與詞語 <span>4</span></button><button class="filter" type="button" data-filter="sentence" aria-pressed="false">閱讀與句子 <span>3</span></button><button class="filter" type="button" data-filter="sound" aria-pressed="false">字音與聽力 <span>2</span></button></nav>
+ <noscript><p class="noscript-note">目前瀏覽器未啟用 JavaScript，仍可點選下方全部練習連結；篩選與進度記錄需啟用 JavaScript。</p></noscript>
+ <div class="grid" id="cards"><article class="card" data-category="shape" aria-labelledby="title-1">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">形</span><span class="category-label">字形與部首</span><span class="card-number">01</span></div>
+        <h3 id="title-1">相似字配對</h3><p class="card-desc">仔細看一看，找出字的不同。</p>
+        <div class="activities"><div class="activity" data-activity="similar-1">
+          <a class="activity-link" id="link-similar-1" href="https://reurl.cc/7Y80O1" target="_blank" rel="noopener noreferrer" aria-label="相似字配對 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-similar-1"><input type="checkbox" id="done-similar-1" data-id="similar-1" aria-label="相似字配對 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div><div class="activity" data-activity="similar-2">
+          <a class="activity-link" id="link-similar-2" href="https://reurl.cc/zOaDzQ" target="_blank" rel="noopener noreferrer" aria-label="相似字配對 L1-2，開始練習（另開分頁）"><span class="level">L1-2</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-similar-2"><input type="checkbox" id="done-similar-2" data-id="similar-2" aria-label="相似字配對 L1-2，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="shape" aria-labelledby="title-2">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">部</span><span class="category-label">字形與部首</span><span class="card-number">02</span></div>
+        <h3 id="title-2">部首</h3><p class="card-desc">認識部首，記住國字的樣子。</p>
+        <div class="activities"><div class="activity" data-activity="radical-1">
+          <a class="activity-link" id="link-radical-1" href="https://reurl.cc/QNq5ZO" target="_blank" rel="noopener noreferrer" aria-label="部首 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-radical-1"><input type="checkbox" id="done-radical-1" data-id="radical-1" aria-label="部首 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div><div class="activity" data-activity="radical-2">
+          <a class="activity-link" id="link-radical-2" href="https://reurl.cc/EY0g40" target="_blank" rel="noopener noreferrer" aria-label="部首 L1-2，開始練習（另開分頁）"><span class="level">L1-2</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-radical-2"><input type="checkbox" id="done-radical-2" data-id="radical-2" aria-label="部首 L1-2，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div><div class="activity" data-activity="radical-3">
+          <a class="activity-link" id="link-radical-3" href="https://reurl.cc/Vnx0zy" target="_blank" rel="noopener noreferrer" aria-label="部首 L1-3，開始練習（另開分頁）"><span class="level">L1-3</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-radical-3"><input type="checkbox" id="done-radical-3" data-id="radical-3" aria-label="部首 L1-3，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="sentence" aria-labelledby="title-3">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">句</span><span class="category-label">閱讀與句子</span><span class="card-number">03</span></div>
+        <h3 id="title-3">句子排序</h3><p class="card-desc">讀一讀，想想句子的先後順序。</p>
+        <div class="activities"><div class="activity" data-activity="order-1">
+          <a class="activity-link" id="link-order-1" href="https://reurl.cc/nx3qYX" target="_blank" rel="noopener noreferrer" aria-label="句子排序 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-order-1"><input type="checkbox" id="done-order-1" data-id="order-1" aria-label="句子排序 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="sentence" aria-labelledby="title-4">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">圖</span><span class="category-label">閱讀與句子</span><span class="card-number">04</span></div>
+        <h3 id="title-4">看圖作答</h3><p class="card-desc">觀察圖片，再想一想怎麼回答。</p>
+        <div class="activities"><div class="activity" data-activity="picture-1">
+          <a class="activity-link" id="link-picture-1" href="https://reurl.cc/p8N9pd" target="_blank" rel="noopener noreferrer" aria-label="看圖作答 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-picture-1"><input type="checkbox" id="done-picture-1" data-id="picture-1" aria-label="看圖作答 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="word" aria-labelledby="title-5">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">字</span><span class="category-label">字義與詞語</span><span class="card-number">05</span></div>
+        <h3 id="title-5">生字意義</h3><p class="card-desc">讀懂生字，認識它的意思。</p>
+        <div class="activities"><div class="activity" data-activity="meaning-1">
+          <a class="activity-link" id="link-meaning-1" href="https://reurl.cc/Gg65qv" target="_blank" rel="noopener noreferrer" aria-label="生字意義 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-meaning-1"><input type="checkbox" id="done-meaning-1" data-id="meaning-1" aria-label="生字意義 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="word" aria-labelledby="title-6">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">詞</span><span class="category-label">字義與詞語</span><span class="card-number">06</span></div>
+        <h3 id="title-6">圈詞意義</h3><p class="card-desc">讀讀詞語，想想它的意思。</p>
+        <div class="activities"><div class="activity" data-activity="vocab-1">
+          <a class="activity-link" id="link-vocab-1" href="https://reurl.cc/OQN5Wv" target="_blank" rel="noopener noreferrer" aria-label="圈詞意義 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-vocab-1"><input type="checkbox" id="done-vocab-1" data-id="vocab-1" aria-label="圈詞意義 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="word" aria-labelledby="title-7">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">用</span><span class="category-label">字義與詞語</span><span class="card-number">07</span></div>
+        <h3 id="title-7">圈詞應用</h3><p class="card-desc">把詞語用在合適的地方。</p>
+        <div class="activities"><div class="activity" data-activity="usage-1">
+          <a class="activity-link" id="link-usage-1" href="https://reurl.cc/aEYZQZ" target="_blank" rel="noopener noreferrer" aria-label="圈詞應用 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-usage-1"><input type="checkbox" id="done-usage-1" data-id="usage-1" aria-label="圈詞應用 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="sound" aria-labelledby="title-8">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">聽</span><span class="category-label">字音與聽力</span><span class="card-number">08</span></div>
+        <h3 id="title-8">聽音辨詞</h3><p class="card-desc">仔細聽聲音，認出正確的詞語。</p>
+        <div class="activities"><div class="activity" data-activity="listen-1">
+          <a class="activity-link" id="link-listen-1" href="https://reurl.cc/berW6E" target="_blank" rel="noopener noreferrer" aria-label="聽音辨詞 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-listen-1"><input type="checkbox" id="done-listen-1" data-id="listen-1" aria-label="聽音辨詞 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="word" aria-labelledby="title-9">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">想</span><span class="category-label">字義與詞語</span><span class="card-number">09</span></div>
+        <h3 id="title-9">造詞</h3><p class="card-desc">想一想，這個字可以組成哪些詞？</p>
+        <div class="activities"><div class="activity" data-activity="create-word-1">
+          <a class="activity-link" id="link-create-word-1" href="https://reurl.cc/OQNYj7" target="_blank" rel="noopener noreferrer" aria-label="造詞 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-create-word-1"><input type="checkbox" id="done-create-word-1" data-id="create-word-1" aria-label="造詞 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="sentence" aria-labelledby="title-10">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">說</span><span class="category-label">閱讀與句子</span><span class="card-number">10</span></div>
+        <h3 id="title-10">造詞－句</h3><p class="card-desc">從詞語出發，練習說出完整的句子。</p>
+        <div class="activities"><div class="activity" data-activity="create-sentence-1">
+          <a class="activity-link" id="link-create-sentence-1" href="https://reurl.cc/xemN51" target="_blank" rel="noopener noreferrer" aria-label="造詞－句 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-create-sentence-1"><input type="checkbox" id="done-create-sentence-1" data-id="create-sentence-1" aria-label="造詞－句 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article>
+<article class="card" data-category="sound" aria-labelledby="title-11">
+        <div class="card-top"><span class="subject-icon" aria-hidden="true">音</span><span class="category-label">字音與聽力</span><span class="card-number">11</span></div>
+        <h3 id="title-11">字音</h3><p class="card-desc">讀準聲音，讓每個字更熟悉。</p>
+        <div class="activities"><div class="activity" data-activity="sound-1">
+          <a class="activity-link" id="link-sound-1" href="https://reurl.cc/p8Na7b" target="_blank" rel="noopener noreferrer" aria-label="字音 L1，開始練習（另開分頁）"><span class="level">L1</span><span>開始練習 <span aria-hidden="true">↗</span></span></a>
+          <label class="done-label" for="done-sound-1"><input type="checkbox" id="done-sound-1" data-id="sound-1" aria-label="字音 L1，我練習完了"><span>我練習完了</span><span class="done-star" aria-hidden="true">★</span></label>
+        </div></div>
+    </article></div>
+</section>
+<details class="tips"><summary>給小朋友與陪伴的大人</summary><p><strong>一次選 2～3 個練習，慢慢來就很好。</strong>不熟悉的地方可以多練習幾次；需要幫忙時，請大人協助讀題。聽力練習前，記得開啟裝置音量。</p><p>完成後回到本頁，勾選「我練習完了」。星星代表自己記錄的練習項目，<strong>不是分數或答對率</strong>。進度只保存在這台裝置的目前瀏覽器，不會傳給老師；共用裝置時，可按「重新記錄」再開始。</p><p>每個練習都會另開分頁。若無法開啟，請先確認網路，或稍後再試；需要時可請老師協助確認原始連結。</p></details>
+</main>
+<footer><span>國語星球 · 第一課複習站</span><span>慢慢想，勇敢試。每一次練習，都是進步。 ✦</span></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>
+(() => {
+ 'use strict';
+ const root = document.documentElement;
+ const boxes = [...document.querySelectorAll('input[data-id]')];
+ const cards = [...document.querySelectorAll('.card')];
+ const filterButtons = [...document.querySelectorAll('[data-filter]')];
+ const stars = [...document.querySelectorAll('#stars span')];
+ const storageKey = 'mandarin-lesson1-review-v1:' + location.pathname;
+ const fontKey = storageKey + ':large';
+ let storageOK = true;
+ let toastTimer;
+ function read(key) { try { return localStorage.getItem(key); } catch (_) { storageOK = false; return null; } }
+ function write(key, value) { try { localStorage.setItem(key, value); } catch (_) { storageOK = false; } document.getElementById('storage-note').hidden = storageOK; }
+ let saved = [];
+ try { const parsed = JSON.parse(read(storageKey) || '[]'); if (Array.isArray(parsed)) saved = parsed.filter(id => typeof id === 'string'); } catch (_) { saved = []; }
+ boxes.forEach(box => { box.checked = saved.includes(box.dataset.id); });
+ function toast(message) { clearTimeout(toastTimer); const el = document.getElementById('toast'); el.textContent = message; el.hidden = false; toastTimer = setTimeout(() => { el.hidden = true; }, 5200); }
+ function updateProgress(save) {
+  const completed = boxes.filter(box => box.checked);
+  boxes.forEach(box => box.closest('.activity').classList.toggle('is-done', box.checked));
+  document.getElementById('done-count').textContent = completed.length;
+  document.getElementById('progress').setAttribute('aria-valuenow', String(completed.length));
+  document.getElementById('progress').setAttribute('aria-valuetext', `已練習 ${completed.length} 項，共 ${boxes.length} 項`);
+  document.getElementById('progress-fill').style.width = `${completed.length / boxes.length * 100}%`;
+  document.getElementById('reset').disabled = completed.length === 0;
+  stars.forEach((star, i) => star.classList.toggle('earned', i < completed.length));
+  document.getElementById('progress-caption').textContent = completed.length === boxes.length ? '14 顆星星都亮了！也可以再練習不熟悉的地方。' : '完成一個練習，就點亮一顆星星！';
+  if (save) write(storageKey, JSON.stringify(completed.map(box => box.dataset.id)));
+ }
+ function filter(value) {
+  filterButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === value)));
+  cards.forEach(card => { card.hidden = value !== 'all' && card.dataset.category !== value; card.classList.remove('picked'); });
+  const visible = cards.filter(card => !card.hidden);
+  const count = visible.reduce((n, card) => n + card.querySelectorAll('.activity').length, 0);
+  document.getElementById('card-count').textContent = `${visible.length} 個主題 · ${count} 項練習`;
+ }
+ filterButtons.forEach(button => button.addEventListener('click', () => filter(button.dataset.filter)));
+ boxes.forEach(box => box.addEventListener('change', () => {
+  updateProgress(true);
+  if (box.checked) toast(boxes.every(item => item.checked) ? '太棒了！14 項練習都完成了，為自己拍拍手！' : '又點亮一顆星星，繼續加油！');
+ }));
+ document.getElementById('reset').addEventListener('click', () => {
+  if (!window.confirm('要清除這個瀏覽器的第一課完成紀錄，重新開始嗎？')) return;
+  boxes.forEach(box => { box.checked = false; }); updateProgress(true); toast('已重新開始，選一個練習出發吧！');
+ });
+ document.getElementById('pick-one').addEventListener('click', () => {
+  const unfinished = boxes.filter(box => !box.checked);
+  const pool = unfinished.length ? unfinished : boxes;
+  const selected = pool[Math.floor(Math.random() * pool.length)];
+  filter('all');
+  const card = selected.closest('.card');
+  const link = card.querySelector('#link-' + selected.dataset.id);
+  card.classList.add('picked');
+  card.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
+  link.focus({preventScroll:true});
+  toast(`今天試試「${card.querySelector('h3').textContent} ${link.querySelector('.level').textContent}」，點「開始練習」出發！`);
+ });
+ const fontButton = document.getElementById('font-toggle');
+ function setFont(large) { root.classList.toggle('large-type', large); fontButton.setAttribute('aria-pressed', String(large)); fontButton.textContent = large ? 'Aa 一般字體' : 'Aa 放大字體'; }
+ setFont(read(fontKey) === 'true');
+ fontButton.addEventListener('click', () => { const large = !root.classList.contains('large-type'); setFont(large); write(fontKey, String(large)); });
+ document.getElementById('storage-note').hidden = storageOK;
+ updateProgress(false);
+ root.classList.add('js');
+})();
+</script>
+</body>
+</html>
